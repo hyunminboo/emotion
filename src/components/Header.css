@@ -4,6 +4,14 @@
     padding: 20px 0;
     justify-content: space-between;
 }
+
+.Header h1 {
+    background-color: rgb(108, 162, 108);
+    color: #2e2e2d;
+    padding: 20px;
+    border-radius: 10px;
+}
+
 .header_center {
     font-size: 25px;
     text-transform: capitalize;

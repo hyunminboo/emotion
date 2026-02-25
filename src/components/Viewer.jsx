@@ -1,21 +1,22 @@
 import React from 'react'
-import './viewer.css'
+import './Viewer.css'
 import { emotionList } from '../util/constants'
-import { getEmotionImage } from '../util/getEmotionImage'
-const Viewer = ({emotionId,content}) => {
+import { getEmotionimage } from '../util/getEmotionimage'
 
-    const emotionItem=emotionList.find(
+const Viewer = ({emotionId, content}) => {
 
-        (item)=>String(item.emotionId)==String(emotionId)
+    const emotionItem = emotionList.find(
+        (item) => String(item.emotionId) === String(emotionId)
     )
+
   return (
     <div className='Viewer'>
         <section className="viewer-img-section">
             <h4>오늘의 감정</h4>
             <div className={`emotion-img-wrapper img-${emotionId}`}>
-                <img src={getEmotionImage(emotionId)} alt="icon" />
+                <img src={getEmotionimage(emotionId)} alt="icon" />
             <div>
-                {emotionItem.emotionName}
+                {emotionItem?.emotionName}
             </div>
             </div>
         </section>
