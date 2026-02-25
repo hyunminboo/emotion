@@ -1,5 +1,5 @@
 import React from 'react'
-import './Viewer.css'
+import './viewer.css'
 import { emotionList } from '../util/constants'
 import { getEmotionimage } from '../util/getEmotionimage'
 
