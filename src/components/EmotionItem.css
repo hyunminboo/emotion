@@ -3,6 +3,8 @@
     text-align: center;
     cursor: pointer;
     border-radius: 5px;
+    background-color: #b4b3b3;
+
 }
 .EmotionItem img{
     width: 80%;
