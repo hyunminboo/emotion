@@ -5,7 +5,7 @@ import Diary from './pages/Diary'
 import Edit from './pages/Edit'
 import Home from './pages/Home'
 import New from './pages/New'
-import NotFound from './pages/NotFound'
+import Notfound from './pages/NotFound'
 
 function reducer(state, action) {
   let nextState;
@@ -134,7 +134,7 @@ function App() {
             <Route path='/new' element={<New />} />
             <Route path='/edit/:id' element={<Edit />} />
             <Route path='/diary/:id' element={<Diary />} />
-            <Route path='*' element={<NotFound />} />
+            <Route path='*' element={<Notfound />} />
 
           </Routes>
         </DiaryDispatchContext.Provider>
